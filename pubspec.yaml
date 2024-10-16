@@ -1,15 +1,17 @@
 name: odoo_repository
 description:  Dart package helps to implement data communication between Odoo and dart client with persistance and offline mode
 version: 0.5.9
-homepage: https://github.com/ERP-Ukraine/odoo-repository-dart
-repository: https://github.com/ERP-Ukraine/odoo-repository-dart
+publish_to: none
 
 environment:
   sdk: ">=2.15.0 <4.0.0"
 
 dependencies:
   equatable: ^2.0.3
-  odoo_rpc: ^0.5.2
+  odoo_rpc: 
+    git:
+      url: https://github.com/ocean-oo/odoo-rpc-dart.git
+      ref: master
   logger: ^2.0.0
   crypto: ^3.0.0
 
